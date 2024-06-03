@@ -1,6 +1,8 @@
 
 # Easy Chat - A Realtime Chatting Application
 
+<img width="538" alt="image" src="https://github.com/nafisreza/easy-chat/assets/68966649/78c6a346-9396-463d-8ee2-740bb8cc5a37">
+
 This is a Java-based chat application that allows users to register, log in, and participate in group chat rooms. The application features a client-server architecture, with the server handling multiple client connections and broadcasting messages to all connected clients.
 
 ### Description
@@ -16,7 +18,7 @@ The chat room interface allows users to view and send messages to all connected 
 - SceneBuilder (for UI design)
 
 ### Features
-
+~
 - User registration and login
 - Group chat room with real-time messaging
 - Update user profile information (name, email, phone number, profile picture)
