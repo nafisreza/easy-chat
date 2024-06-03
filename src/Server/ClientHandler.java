@@ -33,17 +33,27 @@ public class ClientHandler extends Thread {
         try {
             String msg;
             while ((msg = reader.readLine()) != null) {
-                if (msg.equalsIgnoreCase( "exit")) {
+                if (msg.equalsIgnoreCase("exit")) {
                     break;
                 }
+                // Extract the username from the message
+                String[] parts = msg.split(": ", 2);
+                String username = parts[0];
+                String message = parts.length > 1 ? parts[1] : "";
+
+                // Broadcast the message to other clients
                 for (ClientHandler cl : clients) {
-                    cl.writer.println(msg);
+                    if (cl != this) { // Skip the current client
+                        cl.writer.println(msg);
+                    }
                 }
+
+                // Update the sender's message area
+                writer.println(msg);
             }
         } catch (Exception e) {
             e.printStackTrace();
-        }
-        finally {
+        } finally {
             try {
                 reader.close();
                 writer.close();
@@ -52,6 +62,5 @@ public class ClientHandler extends Thread {
                 e.printStackTrace();
             }
         }
-
     }
 }

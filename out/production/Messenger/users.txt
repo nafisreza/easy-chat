@@ -1,2 +1,3 @@
-nafis,nafis,nafis,nafis,Male,nafis,null
-nafisreza,Nafis Reza,1234,nafisreza@iut-dhaka.edu,Male,01730831515,null
+nafis,Nafis Reza,nafis,nafis@gmail.com,Male,23124124124,null
+reza,reza,reza,reza@gmail.com,Male,124124,null
+john,john,john,john@john.com,Male,1421235135,null

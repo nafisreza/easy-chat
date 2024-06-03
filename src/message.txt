@@ -1,2 +1,8 @@
-John: Hello there.
-nafisreza: This is a test message.
+nafis: Hello from nafis
+nafis: Hello from nafis
+reza: Hello back from reza
+reza: Hello back from reza
+nafis: hfdiashfifhasi
+nafis: hfdiashfifhasi
+reza: fnaisfnias
+reza: fnaisfnias

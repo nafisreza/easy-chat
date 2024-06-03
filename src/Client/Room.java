@@ -149,8 +149,6 @@ public class Room extends Thread implements Initializable {
             if (writer != null) {
                 writer.println(loggedInUser.name + ": " + message);
                 msgField.clear();
-                msgRoom.appendText(loggedInUser.name + ": " + message + "\n");
-                saveMessage(loggedInUser.name + ": " + message);
             } else {
                 System.out.println("error");
                 // Handle the case when the writer is null
@@ -193,8 +191,8 @@ public class Room extends Thread implements Initializable {
         String msg;
         try {
             while ((msg = reader.readLine()) != null) {
-//                msgRoom.appendText(msg + "\n");
-//                saveMessage(msg);
+                msgRoom.appendText(msg + "\n");
+                saveMessage(msg);
             }
         } catch (IOException e) {
             e.printStackTrace();
