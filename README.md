@@ -18,13 +18,21 @@ The chat room interface allows users to view and send messages to all connected 
 - SceneBuilder (for UI design)
 
 ### Features
-~
 - User registration and login
 - Group chat room with real-time messaging
 - Update user profile information (name, email, phone number, profile picture)
 - Storing user data and message history locally
 - Client-server architecture for handling multiple client connections
 
+### Getting Started
+To run Easy Chat, follow these steps:
+
+1. Clone the repository or download the project files.
+2. Open the project in your preferred Java IDE (e.g., IntelliJ IDEA, Eclipse).
+3. Build and run the Server class in order to start the server.
+4. Run the Main class from client package.
+5. The application window will open, allowing you to register a new user or log in with an existing account.
+6. After logging in, you will be redirected to the chat room interface.
 
 ### Platforms Supported
 
